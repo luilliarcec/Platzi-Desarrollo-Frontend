@@ -4,69 +4,73 @@
     <meta charset="UTF-8">
     <title>Luis Arce</title>
     <link rel="icon" type="image/png" href="static/img/LogoMe.png">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-<header>
+
+<header class="header">
     <div>
-        <figure>
+        <figure class="logo">
             <img src="static/img/LogoMe.png" alt="Logo de Luis Arce">
         </figure>
-        <nav>
+        <nav class="menu">
             <ol>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Trabajemos juntos</a></li>
+                <li><a href="#portafolio" class="link">Portafolio</a></li>
+                <li><a href="#experiencia" class="link">Experiencia</a></li>
+                <li><a href="#contacto" class="link">Trabajemos juntos</a></li>
             </ol>
         </nav>
     </div>
 </header>
 
-<section>
+<section class="hero">
     <h1>Hola! Soy <strong>Luis Arce</strong>,
         Desarollador <strong>Backend</strong> <br>con pansión por la <br>informática y enseñanza
     </h1>
     <img src="static/img/Me.jpg" width="500" height="500" alt="Imagen principal del sitio">
 </section>
 
-<section id="portafolio">
+<section id="portafolio" class="portfolio">
     <h2>Portafolio (Mis proyectos destacados)</h2>
-    <article>
-        <h3>Platzi Video</h3>
-        <h6>React Native / React</h6>
-        <p>
+    <article class="project">
+        <h3 class="project-title">Platzi Video</h3>
+        <h6 class="project-course">React Native / React</h6>
+        <p class="project-date">
             <small><strong>Fecha:</strong> 01/01/1996</small>
         </p>
-        <p>
+        <p class="project-url">
             <small><strong>Puedes verlo en::</strong> www.facebook.com</small>
         </p>
-        <p>
+        <p class="project-description">
             Aquí mucho texto xD!
         </p>
-        <img src="static/img/GAB2019-3.jpeg" width="500" alt="GAB Demo">
+        <figure class="project-imageContainer">
+            <img class="project-image" src="static/img/GAB2019-3.jpeg" width="500" alt="GAB Demo">
+        </figure>
     </article>
 </section>
 
-<section id="experiencia">
+<section id="experiencia" class="experience">
     <h2>más sobre mi experiencia</h2>
-    <article>
-        <figure>
-            <img src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro" width="500">
+    <article class="event">
+        <figure class="event-imageContainer">
+            <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro" width="500">
         </figure>
-        <h3>Global Azure Bootcamp 2019 - Milagro</h3>
-        <p>Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
-        <a>Ver Demo</a>
+        <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
+        <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
+        <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro" target="_blank">Ver Demo</a>
     </article>
 </section>
 
 <section id="contacto">
-    <form action="">
+    <form action="" class="form-email">
         <h3>¿Creamos algo junto?</h3>
         <input type="text" placeholder="Déjame tu email">
         <button>Enviar</button>
     </form>
 </section>
 
-<footer>
+<footer class="footer">
     Footer
 </footer>
 

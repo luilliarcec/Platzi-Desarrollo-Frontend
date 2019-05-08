@@ -1,0 +1,25 @@
+/*
+Reglas
+Selectores
+Declaraciones
+Propiedades
+Valores
+*/
+
+/*Selector de etiqueta
+body {}
+*/
+
+/*Selector descendente
+body header div nav ol li a {}
+*/
+
+/*Selector de clase y id
+.link {}
+#contacto {}
+ */
+
+header {
+    background: pink;
+    color: red;
+}
