@@ -26,6 +26,7 @@ body header div nav ol li a {}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,12 +40,24 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2px;
     color: white;
+    margin: 0;
+    /*margin: 100px 150px 70px 30px;*/
     /*text-transform: uppercase;*/
     /*text-decoration: dashed;*/
 }
 
 h1 strong {
     color: #026fff;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
 }
 
 .hero {
@@ -54,6 +67,12 @@ h1 strong {
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio {
+    background-color: #fafafa;
 }
 
 .project {
@@ -67,6 +86,11 @@ h1 strong {
     border-radius: 10px;
     /*border-radius: 10px 10px 10px 50px;*/
     /*border-bottom-left-radius: 50px;*/
+    margin: 10px 10px 15px 10px;
+    /*margin-bottom: 15px;*/
+    padding: 20px;
+    background: white;
+    display: flex;
 }
 
 .project-details {
@@ -80,9 +104,57 @@ h1 strong {
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
 }
 
 .header a {
     color: white;
     text-decoration: none;
 }
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.logo img {
+    width: 90px;
+    /*margin-left: 15px;*/
+}
+
+/*Pruebas de flexbox*/
+/*.flexbox {*/
+/*    display: flex; !*Contenedor flexible*!*/
+/*    !*flex-wrap: nowrap;*!*/
+/*    !*flex-direction: column;*!*/
+/*    height: 400px;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: wrap; !*Elementos pasan a la sgte column o fila "cae"*!*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.box {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    margin: 5px;*/
+/*    border: 1px solid red;*/
+/*    flex-shrink: 0; !*Capacidad de encogimiento*!*/
+/*}*/
