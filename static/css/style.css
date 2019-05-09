@@ -50,6 +50,15 @@ h1 strong {
     color: #026fff;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 ul, ol {
     margin: 0;
     padding: 0;
@@ -73,6 +82,7 @@ figure {
 
 .portfolio {
     background-color: #fafafa;
+    padding: 20px;
 }
 
 .project {
@@ -86,12 +96,37 @@ figure {
     border-radius: 10px;
     /*border-radius: 10px 10px 10px 50px;*/
     /*border-bottom-left-radius: 50px;*/
-    margin: 10px 10px 15px 10px;
-    /*margin-bottom: 15px;*/
+    /*margin: 10px 10px 15px 10px;*/
+    /*margin: 0;*/
+    margin-bottom: 15px;
     padding: 20px;
     background: white;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-course, .project-date, .project-url {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+}
+/*.project-date {*/
+/*    margin: 10px 0;*/
+/*}*/
 
 .project-details {
     width: 500px;
@@ -142,6 +177,9 @@ figure {
 
 .header-logo h2 {
     margin: 0;
+    text-transform: none;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .logo img {
@@ -172,6 +210,15 @@ figure {
     text-decoration: none;
     color: white;
 }
+
+.footer-description {
+    padding-left: 20px;
+}
+
+.footer-author {
+    padding-right: 20px;
+}
+
 /*Pruebas de flexbox*/
 /*.flexbox {*/
 /*    display: flex; !*Contenedor flexible*!*/
