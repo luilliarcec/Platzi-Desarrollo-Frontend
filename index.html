@@ -14,149 +14,166 @@
 <!--    <div class="box"></div>-->
 <!--</div>-->
 <header class="header">
-    <div class="header-logo">
-        <figure class="logo">
-            <img src="static/img/LogoMe.png" alt="Logo de Luis Arce">
-        </figure>
-        <h2>Luis Andrés Arce</h2>
-    </div>
+    <div class="wrapper">
+        <div class="header-logo">
+            <figure class="logo">
+                <img src="static/img/LogoMe.png" alt="Logo de Luis Arce">
+            </figure>
+            <h2>Luis Andrés Arce</h2>
+        </div>
 
-    <nav class="menu">
-        <ol>
-            <li><a href="#portafolio" class="link">Portafolio</a></li>
-            <li><a href="#experiencia" class="link">Experiencia</a></li>
-            <li><a href="#contacto" class="link">Trabajemos juntos</a></li>
-        </ol>
-    </nav>
+        <nav class="menu">
+            <ol>
+                <li><a href="#portafolio" class="link">Portafolio</a></li>
+                <li><a href="#experiencia" class="link">Experiencia</a></li>
+                <li><a href="#contacto" class="link">Trabajemos juntos</a></li>
+            </ol>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-    <h1>Hola! Soy <strong>Luis Arce</strong>,<br>
-        Desarollador <strong>Backend</strong> con pansión<br>por la <strong>informática y enseñanza</strong>
-    </h1>
-    <!--    <img src="static/img/Me.jpg" width="500" height="500" alt="Imagen principal del sitio">-->
+    <div class="wrapper">
+        <h1>Hola! Soy <strong>Luis Arce</strong>,<br>
+            Desarollador <strong>Backend</strong> con pansión<br>por la <strong>informática y enseñanza</strong>
+        </h1>
+        <img class="hero-image" src="static/img/Me.jpg" alt="Imagen principal del sitio">
+    </div>
 </section>
 
 <section id="portafolio" class="portfolio">
-    <h2>Portafolio (Mis proyectos destacados)</h2>
-    <article class="project">
-        <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date">
-                <small><strong>Fecha:</strong> 01/01/1996</small>
-            </p>
-            <p class="project-url">
-                <small><strong>Puedes verlo en: </strong><a href="https://www.facebook.com" target="_blank">www.facebook.com</a>
-                </small>
-            </p>
-            <p class="project-description">
-                Aquí mucho texto xD!
-            </p>
-        </div>
-        <figure class="project-imageContainer">
-            <img class="project-image" src="static/img/GAB2019-3.jpeg" width="500" alt="GAB Demo">
-        </figure>
-    </article>
+    <div class="wrapper">
+        <h2>Portafolio (Mis proyectos destacados)</h2>
+        <article class="project">
+            <div class="project-details">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date">
+                    <small><strong>Fecha:</strong> 01/01/1996</small>
+                </p>
+                <p class="project-url">
+                    <small><strong>Puedes verlo en: </strong><a href="https://www.facebook.com" target="_blank">www.facebook.com</a>
+                    </small>
+                </p>
+                <p class="project-description">
+                    Aquí mucho texto xD!
+                </p>
+            </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="static/img/GAB2019-3.jpeg" alt="GAB Demo">
+            </figure>
+        </article>
 
-    <article class="project">
-        <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date">
-                <small><strong>Fecha:</strong> 01/01/1996</small>
-            </p>
-            <p class="project-url">
-                <small><strong>Puedes verlo en:: </strong><a href="https://www.facebook.com">www.facebook.com</a>
-                </small>
-            </p>
-            <p class="project-description">
-                Aquí mucho texto xD!
-            </p>
-        </div>
-        <figure class="project-imageContainer">
-            <img class="project-image" src="static/img/GAB2019-3.jpeg" width="500" alt="GAB Demo">
-        </figure>
-    </article>
+        <article class="project">
+            <div class="project-details">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date">
+                    <small><strong>Fecha:</strong> 01/01/1996</small>
+                </p>
+                <p class="project-url">
+                    <small><strong>Puedes verlo en:: </strong><a href="https://www.facebook.com">www.facebook.com</a>
+                    </small>
+                </p>
+                <p class="project-description">
+                    Aquí mucho texto xD!
+                </p>
+            </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="static/img/GAB2019-3.jpeg" alt="GAB Demo">
+            </figure>
+        </article>
+    </div>
 </section>
 
-<h2 class="experience-title">Más sobre mi experiencia</h2>
+<div class="wrapper">
+    <h2 class="experience-title">Más sobre mi experiencia</h2>
+</div>
 <section id="experiencia" class="experience">
-    <article class="event">
-        <figure class="event-imageContainer">
-            <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro"
-                 width="500">
-        </figure>
-        <div class="event-detail">
-            <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
-            <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
-            <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro" target="_blank">Ver
-                Demo</a>
-        </div>
-    </article>
+    <div class="wrapper">
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
+            </figure>
+            <div class="event-detail">
+                <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
+                <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
+                <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro"
+                   target="_blank">Ver
+                    Demo</a>
+            </div>
+        </article>
 
-    <article class="event">
-        <figure class="event-imageContainer">
-            <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro"
-                 width="500">
-        </figure>
-        <div class="event-detail">
-            <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
-            <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
-            <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro" target="_blank">Ver
-                Demo</a>
-        </div>
-    </article>
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
+            </figure>
+            <div class="event-detail">
+                <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
+                <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
+                <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro"
+                   target="_blank">Ver
+                    Demo</a>
+            </div>
+        </article>
 
-    <article class="event">
-        <figure class="event-imageContainer">
-            <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro"
-                 width="500">
-        </figure>
-        <div class="event-detail">
-            <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
-            <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
-            <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro" target="_blank">Ver
-                Demo</a>
-        </div>
-    </article>
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
+            </figure>
+            <div class="event-detail">
+                <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
+                <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
+                <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro"
+                   target="_blank">Ver
+                    Demo</a>
+            </div>
+        </article>
 
-    <article class="event">
-        <figure class="event-imageContainer">
-            <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro"
-                 width="500">
-        </figure>
-        <div class="event-detail">
-            <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
-            <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
-            <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro" target="_blank">Ver
-                Demo</a>
-        </div>
-    </article>
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
+            </figure>
+            <div class="event-detail">
+                <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
+                <p class="event-description">Evento organizado por la comunidad Avanet con el respaldo de Microsoft</p>
+                <a class="event-url" href="https://github.com/luilliarcec/Global-Azure-Bootcamp-2019-Milagro"
+                   target="_blank">Ver
+                    Demo</a>
+            </div>
+        </article>
+    </div>
 </section>
 
 <section id="contacto" class="contact">
-    <form action="" class="form-email">
-        <h3>¿Creamos algo junto?</h3>
-        <input type="text" placeholder="Déjame tu email">
-        <button>Enviar</button>
-    </form>
+    <div class="wrapper">
+        <form action="" class="form-email">
+            <h3>¿Creamos algo junto?</h3>
+            <label>
+                <input type="text" placeholder="Déjame tu email">
+            </label>
+            <button>Enviar</button>
+        </form>
 
-    <div class="social">
-        <a href="https://twitter.com/luilliarcec" class="social-link twitter"></a>
-        <a href="https://www.facebook.com/luilliarcec1" class="social-link facebook"></a>
-        <a href="https://github.com/luilliarcec" class="social-link github"></a>
-        <a href="https://www.instagram.com/luilliarcec/" class="social-link instagram"></a>
+        <div class="social">
+            <a href="https://twitter.com/luilliarcec" class="social-link twitter"></a>
+            <a href="https://www.facebook.com/luilliarcec1" class="social-link facebook"></a>
+            <a href="https://github.com/luilliarcec" class="social-link github"></a>
+            <a href="https://www.instagram.com/luilliarcec/" class="social-link instagram"></a>
+        </div>
     </div>
 </section>
 
 <footer class="footer">
-    <div class="footer-description">
-        <p>My website <img src="static/img/LogoMe.png" alt="Logo Luis Arce" class="footer-logo">Luis Arce - Developer</p>
-    </div>
-    <div class="footer-author">
-        <p>Designed with <img src="static/img/heart.png" alt="Con amor" class="footer-heart">
-            by <a href="https://twitter.com/luilliarcec" target="_blank">@luilliarcec</a></p>
+    <div class="wrapper">
+        <div class="footer-description">
+            <p>My website <img src="static/img/LogoMe.png" alt="Logo Luis Arce" class="footer-logo">Luis Arce - Developer
+            </p>
+        </div>
+        <div class="footer-author">
+            <p>Designed with <img src="static/img/heart.png" alt="Con amor" class="footer-heart">
+                by <a href="https://twitter.com/luilliarcec" target="_blank">@luilliarcec</a></p>
+        </div>
     </div>
 </footer>
 

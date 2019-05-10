@@ -71,13 +71,20 @@ figure {
 
 .hero {
     height: 300px;
-    background-image: url("../img/Me.jpg");
+    /*background-image: url("../img/Me.jpg");*/
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /*background-size: 500px 300px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position-x: right;*/
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    width: 400px;
+    height: 298px;
+    object-fit: cover;
 }
 
 .portfolio {
@@ -92,7 +99,7 @@ figure {
     /*border-top-color: yellow;*/
     /*border-top-style: solid;*/
     /*border-top-width: 15px;*/
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     border-radius: 10px;
     /*border-radius: 10px 10px 10px 50px;*/
     /*border-bottom-left-radius: 50px;*/
@@ -104,7 +111,9 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid gray;
     /*flex-wrap: wrap;*/
+    box-shadow: 3px 3px 3px #888888;
 }
 
 .project-title {
@@ -133,6 +142,10 @@ figure {
 }
 
 .project-imageContainer {
+    width: 500px;
+}
+
+.project-image {
     width: 500px;
 }
 
@@ -212,15 +225,16 @@ figure {
 }
 
 .footer-description {
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 
 .footer-author {
-    padding-right: 20px;
+    /*padding-right: 20px;*/
 }
 
 .experience {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .experience-title {
@@ -237,7 +251,7 @@ figure {
     background-color: #f4fbff;
 }
 
-.event img {
+.event-image {
     width: 480px;
     height: 200px;
     object-fit: cover;
@@ -274,7 +288,7 @@ figure {
 }
 
 .social {
-    padding-right: 20px;
+    /*padding-right: 20px;*/
 }
 
 .social-link {
@@ -329,6 +343,18 @@ figure {
 .form-email h3 {
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.wrapper {
+    /*border: 1px solid red;*/
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
 /*Pruebas de flexbox*/
 /*.flexbox {*/
