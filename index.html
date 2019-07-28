@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<i class="icon-menu burger-button"></i>
+<i id="menu-button" class="icon-menu burger-button"></i>
 <!--<div class="flexbox">-->
 <!--    <div class="box"></div>-->
 <!--    <div class="box"></div>-->
@@ -96,7 +96,8 @@
     <div class="wrapper">
         <article class="event">
             <figure class="event-imageContainer">
-                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
+                <img class="event-image" src="static/img/GAB2019-1.jpeg"
+                     alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
             </figure>
             <div class="event-detail">
                 <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
@@ -110,9 +111,12 @@
         <article class="event">
             <figure class="event-imageContainer">
                 <div class="flexive-video">
-                    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/2Ndqm-YKSIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="youtube-video" width="560" height="315"
+                            src="https://www.youtube.com/embed/2Ndqm-YKSIs" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
-<!--                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">-->
+                <!--                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">-->
             </figure>
             <div class="event-detail">
                 <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
@@ -138,7 +142,8 @@
 
         <article class="event">
             <figure class="event-imageContainer">
-                <img class="event-image" src="static/img/GAB2019-1.jpeg" alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
+                <img class="event-image" src="static/img/GAB2019-1.jpeg"
+                     alt="Global Azure Bootcamp 2019 - UNEMI Milagro">
             </figure>
             <div class="event-detail">
                 <h3 class="event-title">Global Azure Bootcamp 2019 - Milagro</h3>
@@ -173,7 +178,8 @@
 <footer class="footer">
     <div class="wrapper">
         <div class="footer-description">
-            <p>My website <img src="static/img/LogoMe.png" alt="Logo Luis Arce" class="footer-logo">Luis Arce - Developer
+            <p>My website <img src="static/img/LogoMe.png" alt="Logo Luis Arce" class="footer-logo">Luis Arce -
+                Developer
             </p>
         </div>
         <div class="footer-author">
@@ -182,6 +188,31 @@
         </div>
     </div>
 </footer>
+
+<script>
+    // console.log(document.getElementsByClassName('menu')); // Trae solo el elemento
+    // console.log(document.querySelector('.menu')); // Trae _todo el selector con sus hijos es decir _todo el html
+
+    // document.querySelector('.menu').classList.add('is-active');
+    // const menu_button = document.querySelector('#menu-button');
+    const nav_menu = document.querySelector('.menu');
+    const menu_button = document.getElementById('menu-button');
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
+
+    const hide_menu = () => nav_menu.classList.toggle('is-active');
+
+    if (ipad.matches)
+        menu_button.addEventListener('click', hide_menu);
+
+    ipad.addEventListener('change', (event) => {
+        if (event.matches) {
+            menu_button.addEventListener('click', hide_menu);
+        } else {
+            menu_button.removeEventListener('click', hide_menu);
+        }
+    });
+
+</script>
 
 </body>
 </html>
